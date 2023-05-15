@@ -48,7 +48,7 @@ li {
   /*END OF NAV-MAIN*/
 }
 .main .banner .nav-main {
-  padding: 0 20%;
+  padding: 0 13%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--line);
@@ -77,7 +77,7 @@ li {
   margin: 0 16px;
   color: var(--dark-gray);
   display: flex;
-  font-weight: 600;
+  font-weight: 400;
   flex-direction: column;
   align-items: center;
 }
@@ -108,24 +108,25 @@ li {
 
 /*END OF NAV-MAIN*/
 .main .banner .nav-content {
-  padding: 0 20%;
+  margin: 0 13%;
+  padding-top: 25px;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  background-color: var(--light-grey);
 }
 .main .banner .nav-content .left-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 70px;
 }
 .main .banner .nav-content .left-container h1 {
-  font-size: 60px;
+  font-size: 57px;
   font-family: "Konkhmer Sleokchher", cursive;
   line-height: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .main .banner .nav-content .left-container p {
   font-size: 20px;
@@ -147,7 +148,66 @@ li {
 }
 .main .banner .nav-content .right-container .image-banner {
   border-radius: 20px;
-  width: 100%;
+  width: 70%;
 }
 
-/*END OF NAV-BANNER*//*# sourceMappingURL=style.css.map */
+/*END OF NAV-BANNER*/
+.main .second-section {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 250px 1fr;
+}
+.main .second-section .second-banner {
+  background-image: url("/assets/images/home/journey.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+}
+.main .second-section .second-banner h2 {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-white);
+  text-shadow: 2px 2px 5px #333;
+}
+.main .second-section .second-banner-content {
+  margin: 20px 13%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main .second-section .second-banner-content .col-3 {
+  display: grid;
+  grid-template-rows: 160px 80px 1fr;
+  padding: 0 15px;
+}
+.main .second-section .second-banner-content .col-3 .col-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .second-section .second-banner-content .col-3 .col-img img {
+  width: 35%;
+}
+.main .second-section .second-banner-content .col-3 .col-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.main .second-section .second-banner-content .col-3 .col-content h3 {
+  font-size: 20px;
+  font-family: "Konkhmer Sleokchher", cursive;
+  color: var(--dark-gray);
+}
+.main .second-section .second-banner-content .col-3 .col-desc {
+  padding: 0 25px;
+  display: flex;
+  text-align: center;
+}
+.main .second-section .second-banner-content .col-3 .col-desc span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}/*# sourceMappingURL=style.css.map */
