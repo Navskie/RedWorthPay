@@ -125,7 +125,6 @@ li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    // background-color: var(--light-grey);
 
     .left-container {
         display: flex;
@@ -176,7 +175,7 @@ li {
 .main .second-section {
     height: 100vh;
     display: grid;
-    grid-template-rows: 250px 1fr;
+    grid-template-rows: 230px 1fr;
 
     .second-banner {
         background-image: url("/assets/images/home/journey.png");
@@ -198,14 +197,17 @@ li {
     }
 
     .second-banner-content {
-        margin: 20px 13%;
+        padding: 2% 10%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:1fr;
+        // background-color: var(--light-grey);
 
         .col-3  {
             display: grid;
-            grid-template-rows: 160px 80px 1fr;
-            padding: 0 15px;
+            grid-template-columns: 400px 1fr;
+            padding: 20px 35px;
+            margin: 0 15px;
+            margin-bottom: 10px;
 
             .col-img {
                 display: flex;
@@ -213,33 +215,101 @@ li {
                 align-items: center;
 
                 img {
-                    width: 35%;
-                    // border-radius: 50%;
-                }
-            }
-
-            .col-content {
-                display: flex;
-                justify-content: center;
-                padding-top: 15px;
-
-                h3 {
-                    font-size: 20px;
-                    font-family: 'Konkhmer Sleokchher', cursive;
-                    color: var(--dark-gray);
+                    width: 100%;
                 }
             }
 
             .col-desc {
                 padding: 0 25px;
                 display: flex;
-                text-align: center;
+                align-items: center;
+                
+                h3 {
+                    text-align: center;
+                    font-size: 35px;
+                    margin-bottom: 20px;
+                    font-family: 'Konkhmer Sleokchher', cursive;
+                    text-decoration: underline;
+                    color: var(--light-red);
+                }
 
                 span {
-                    font-weight: 300;
-                    font-size: 14px;
-                    line-height: 17px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
                 }
+
+                .btn-get {
+                    color: var(--light-white);
+                    background-color: var(--light-red);
+                    padding: 12px 30px;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    transition: transform 200ms ease-in;
+                    border: none;
+                    margin-top: 40px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// third section
+.main .third-section {
+    height: 100vh;
+    padding: 2% 10%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    
+    
+    .column {
+        display: grid;
+        padding: 50px 35px;
+        margin: 0 15px;
+        margin-bottom: 10px;
+        grid-template-rows: 200px 1fr;
+        border-radius: 25px;
+        background: var(--light-grey);
+        .col-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .col-content {
+            display: flex;
+            align-items: center;
+
+            h3 {
+                text-align: center;
+                font-size: 35px;
+                margin-top: 50px;
+                font-family: 'Konkhmer Sleokchher', cursive;
+                text-decoration: underline;
+                color: var(--light-red);
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            .btn-get {
+                color: var(--light-white);
+                background-color: var(--light-red);
+                padding: 12px 30px;
+                border-radius: 5px;
+                font-size: 20px;
+                transition: transform 200ms ease-in;
+                border: none;
+                margin-top: 40px;
+                cursor: pointer;
             }
         }
     }
